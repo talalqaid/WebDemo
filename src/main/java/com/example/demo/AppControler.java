@@ -10,8 +10,12 @@ import java.util.List;
 @RestController
 public class AppControler {
 
+    @GetMapping("/")
+    public String welecome1(){
+        return "Welcome to WebApp in Azure";
+    }
     @GetMapping("/welcome")
-    public String welecome(){
+    public String welecome2(){
         return "Welcome to spring boot";
     }
     @GetMapping("/courses")
